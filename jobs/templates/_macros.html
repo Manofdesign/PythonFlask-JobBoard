@@ -4,7 +4,8 @@
 <div class="card adjust-height">
     <header class="card-header">
       <p class="card-header-title">
-        <a {{ job['title'] }}>   
+        <a {{ job['title'] }}> 
+            <link href = {{ url_for('job', job_id=job['id']) }}>
         </a>
       </p>
     </header>
@@ -29,7 +30,6 @@
     {%endfor%}
 
 </div>
-
 {%endmacro%}
 
 
